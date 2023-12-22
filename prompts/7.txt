@@ -1,0 +1,24 @@
+
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the modulus (remainder) of dividing one number by another.
+*
+* @param a The dividend (the number to be divided).
+* @param b The divisor (the number by which the dividend is divided).
+* @return The remainder when dividing the dividend by the divisor.
+* @throws ArithmeticException If the divisor is zero, as division by zero is undefined.
+*/
+public static double modulus(double a, double b) {
+    if (b == 0) {
+        throw new ArithmeticException("Cannot calculate modulus with zero divisor.");
+    }
+    return a % b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 

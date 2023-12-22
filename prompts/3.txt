@@ -1,0 +1,20 @@
+
+Need to generate test cases for a given function description. 
+
+
+/**
+* Multiplies two numbers.
+*
+* @param a First operand
+* @param b Second operand
+* @return The product of a and b
+*/
+public static double multiply(double a, double b) {
+    return a * b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 

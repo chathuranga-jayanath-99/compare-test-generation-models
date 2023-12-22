@@ -1,0 +1,20 @@
+
+Need to generate test cases for a given function description. 
+
+
+/**
+* Adds two numbers.
+*
+* @param a First operand
+* @param b Second operand
+* @return The sum of a and b
+*/
+public static double add(double a, double b) {
+    return a + b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
