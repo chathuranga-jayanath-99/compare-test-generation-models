@@ -1,0 +1,56 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the exponential function (e^x) for a given number.
+*
+* @param a The exponent for the exponential function.
+* @return The result of raising the mathematical constant 'e' to the power of the input exponent.
+*/
+public static double exp(double a) {
+    return Math.exp(a);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    calculate_addition_operation() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.add(num1, num2);
+        assertEquals(result, 30);
+    }
+
+    @Test
+    public void 
+    calculate_subtraction_operation() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.subtract(num1, num2);
+        assertEquals(result, 10);
+    }
+
+    @Test
+    public void 
+    calculate_multiplication_operation() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.multiply(num1, num2);
+        assertEquals(result, 200);
+    }
+
+    @Test
+    public void 
+    calculate_division_operation() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.divide(num1, num2);
+        assertEquals(result, 5);
+    }
+}
+
+
+</s>

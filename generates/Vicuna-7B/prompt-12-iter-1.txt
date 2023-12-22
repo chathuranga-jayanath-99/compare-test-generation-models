@@ -1,0 +1,38 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the logarithm (base 10) of a positive number.
+*
+* @param a The positive number for which the logarithm is calculated.
+* @return The logarithm (base 10) of the input number.
+* @throws ArithmeticException If the input number is non-positive, as logarithms of non-positive numbers are undefined.
+*/
+public static double log(double a) {
+    if (a <= 0) {
+        throw new ArithmeticException("Cannot calculate logarithm for non-positive number.");
+    }
+    return Math.log10(a);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testLog() {
+        // Test cases
+        double testCases[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (double a : testCases) {
+            double result = log(a);
+            double expected = Math.log10(a);
+            assertEquals(expected, result, 0.00001);
+        }
+    }
+}
+
+
+In the above code, we have a function `log` that calculates the logarithm (base 10) of a positive number. We also have a test class `CalculatorTest` that contains a single test case `testLog` that tests the `log` function with various input values.
+
+The test case `testLog` generates an array of test cases `testCases` that includes various positive numbers from 0 to 10. It then iterates through each test case and calculates the expected result using the `Math.log10` method. It then asserts that the actual result calculated by the `log` function is equal to the expected result, with a tolerance of 0.00001.
+
+Note that the `assertEquals` method is used to compare the actual and expected results. If the actual and expected results are not equal, the test will fail and an error message will be displayed

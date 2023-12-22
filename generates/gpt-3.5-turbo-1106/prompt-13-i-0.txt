@@ -1,0 +1,21 @@
+```java
+public class CalculatorTest {
+    @Test
+    public void testExpForPositiveExponent() {
+        double result = Calculator.exp(2.5);
+        assertEquals(12.1824939607, result, 0.0000000001);
+    }
+    
+    @Test
+    public void testExpForZeroExponent() {
+        double result = Calculator.exp(0);
+        assertEquals(1.0, result, 0.0);
+    }
+    
+    @Test
+    public void testExpForNegativeExponent() {
+        double result = Calculator.exp(-3.0);
+        assertEquals(0.0497870684, result, 0.0000000001);
+    }
+}
+```

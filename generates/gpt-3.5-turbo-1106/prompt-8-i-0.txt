@@ -1,0 +1,16 @@
+```java
+    public void testPositiveExponent() {
+        assertEquals(8.0, Calculator.power(2.0, 3.0), 0.0001);
+    }
+
+    @Test
+    public void testZeroExponent() {
+        assertEquals(1.0, Calculator.power(5.0, 0.0), 0.0001);
+    }
+
+    @Test
+    public void testNegativeExponent() {
+        assertEquals(0.125, Calculator.power(2.0, -3.0), 0.0001);
+    }
+}
+```

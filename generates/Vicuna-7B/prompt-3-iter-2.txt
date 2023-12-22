@@ -1,0 +1,36 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Multiplies two numbers.
+*
+* @param a First operand
+* @param b Second operand
+* @return The product of a and b
+*/
+public static double multiply(double a, double b) {
+    return a * b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testMultiply() {
+        // Test case 1:
+        double result = Calculator.multiply(2.0, 3.0);
+        assertEquals(6.0, result);
+
+        // Test case 2:
+        result = Calculator.multiply(0.0, 0.0);
+        assertEquals(0.0, result);
+
+        // Test case 3:
+        result = Calculator.multiply(1.0, -2.0);
+        assertEquals(-2.0, result);
+
+        // Test case 4:
+        result = Calculator.multiply(2.0, -3.0);
+        assertEquals(-6.0, result);
+    }
+}

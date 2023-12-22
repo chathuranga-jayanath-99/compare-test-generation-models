@@ -1,0 +1,52 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the square root of a given number.
+*
+* @param a The number for which the square root is calculated.
+* @return The square root of the input number.
+* @throws ArithmeticException If the input number is negative, as the square root of
+*                             a negative number is not defined in the real number system.
+*/
+public static double squareRoot(double a) {
+    if (a < 0) {
+        throw new ArithmeticException("Cannot calculate square root of a negative number.");
+    }
+    return Math.sqrt(a);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testSquareRoot() {
+        // Test cases
+        double[] testCases = {0, 1, -1, 10, -10};
+
+        // Generate test cases
+        for (double testCase : testCases) {
+            double expectedResult = Math.sqrt(testCase);
+            double actualResult = squareRoot(testCase);
+            assertEquals(expectedResult, actualResult, 0.01);
+        }
+    }
+}
+
+
+In the above code, the test cases are hardcoded. This is not a good practice as it makes the test code brittle and difficult to maintain. Instead, we can use a library like JUnit to generate test cases.
+
+To use JUnit, we need to include the JUnit library in our project. We can do this by adding the following dependency to our `build.gradle` file:
+```groovy
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+```
+Now, we can modify the `CalculatorTest` class to use JUnit for generating test cases:
+```java
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class CalculatorTest {
+    @Test

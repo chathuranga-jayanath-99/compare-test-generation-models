@@ -1,0 +1,28 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the logarithm (base 10) of a positive number.
+*
+* @param a The positive number for which the logarithm is calculated.
+* @return The logarithm (base 10) of the input number.
+* @throws ArithmeticException If the input number is non-positive, as logarithms of non-positive numbers are undefined.
+*/
+public static double log(double a) {
+    if (a <= 0) {
+        throw new ArithmeticException("Cannot calculate logarithm for non-positive number.");
+    }
+    return Math.log10(a);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testLog() {
+        double input = 2.0;
+        double expected = 0.3000000000000000000;
+        double result = Calculator.log(input);
+        assertEquals(expected, result, 0.000001);
+    }
+}

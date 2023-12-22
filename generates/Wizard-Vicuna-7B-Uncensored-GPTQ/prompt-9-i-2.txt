@@ -1,0 +1,70 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the sine of an angle specified in degrees.
+*
+* @param angleInDegrees The angle in degrees.
+* @return The sine of the given angle.
+*/
+public static double sin(double angleInDegrees) {
+    return Math.sin(Math.toRadians(angleInDegrees));
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    add() {
+        Calculator calculator = new Calculator();
+        int result = calculator.add(10, 20);
+        assertThat(result, is(equalTo(30)));
+    }
+
+    @Test
+    public void 
+    multiply() {
+        Calculator calculator = new Calculator();
+        int result = calculator.multiply(10, 20);
+        assertThat(result, is(equalTo(200)));
+    }
+
+    @Test
+    public void 
+    divide() {
+        Calculator calculator = new Calculator();
+        int result = calculator.divide(10, 2);
+        assertThat(result, is(equalTo(5)));
+    }
+
+    @Test
+    public void 
+    modulo() {
+        Calculator calculator = new Calculator();
+        int result = calculator.modulo(10, 2);
+        assertThat(result, is(equalTo(2)));
+    }
+}
+
+This is the test class for the Calculator class.
+- It has three tests:
+- add()
+- multiply()
+- divide()
+- modulo()
+Each test has a test case for the respective method of the Calculator class.
+- The add() test checks that the result of adding two numbers is correct.
+- The multiply() test checks that the result of multiplying two numbers is correct.
+- The divide() test checks that the result of dividing two numbers is correct.
+- The modulo() test checks that the result of calculating the remainder of two numbers is correct.
+
+In the above code, the Calculator class has four methods: add(), multiply(), divide() and modulo().
+- The add() method takes two parameters and returns the result of adding them.
+- The multiply() method takes two parameters and returns the result of multiplying them.
+- The divide() method takes two parameters and returns the result of dividing them.
+- The modulo() method takes two parameters and returns the result of calculating the remainder of them.
+
+The test class provides three test cases for each method, and each test case has a test case for the respective method of the Calculator class.
+- Each test case has a code block that provides a sample input and expected output.

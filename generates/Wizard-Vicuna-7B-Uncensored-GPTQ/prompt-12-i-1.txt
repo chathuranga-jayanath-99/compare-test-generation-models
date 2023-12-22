@@ -1,0 +1,61 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the logarithm (base 10) of a positive number.
+*
+* @param a The positive number for which the logarithm is calculated.
+* @return The logarithm (base 10) of the input number.
+* @throws ArithmeticException If the input number is non-positive, as logarithms of non-positive numbers are undefined.
+*/
+public static double log(double a) {
+    if (a <= 0) {
+        throw new ArithmeticException("Cannot calculate logarithm for non-positive number.");
+    }
+    return Math.log10(a);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    shouldReturnValueOfLogarithmOfABase10WhenGivenLogarithmOfABase10AndBase() {
+        // Arrange
+        double base10 = 10.0;
+        double base = 2.0;
+        // Act
+        double result = log(base10, base);
+        // Assert
+        assertEquals(Math.log10(base10), result, 0.0001);
+    }
+
+    @Test
+    public void 
+    shouldReturnValueOfLogarithmOfABase10WhenGivenLogarithmOfABase10AndBase() {
+        // Arrange
+        double base10 = 10.0;
+        double base = 10.0;
+        // Act
+        double result = log(base10, base);
+        // Assert
+        assertEquals(Math.log10(base10), result, 0.0001);
+    }
+
+    @Test
+    public void 
+    shouldReturnValueOfLogarithmOfABase10WhenGivenLogarithmOfABase10AndBase() {
+        // Arrange
+        double base10 = 10.0;
+        double base = 2.0;
+        // Act
+        double result = log(base10, base);
+        // Assert
+        assertEquals(Math.log10(base10), result, 0.0001);
+    }
+}
+
+```
+
+This is a sample test case for the given function description. You can modify the code to generate more test cases as per your requirement.</s>

@@ -1,0 +1,69 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the result of raising a base to a specified exponent.
+*
+* @param base     The base number.
+* @param exponent The exponent to which the base is raised.
+* @return The result of raising the base to the exponent.
+*/
+public static double power(double base, double exponent) {
+    return Math.pow(base, exponent);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    testAdd() {
+ 
+    // Given
+ 
+    // When
+ 
+    // Then
+ 
+    //assertEquals(10, Calculator.add(10, 5));
+ 
+    //assertEquals(15, Calculator.add(10, 5));
+ 
+    //assertEquals(20, Calculator.add(10, 10));
+ 
+    //assertEquals(30, Calculator.add(10, 15));
+ 
+    //assertEquals(40, Calculator.add(20, 10));
+ 
+    //assertEquals(50, Calculator.add(30, 15));
+ 
+    //assertEquals(60, Calculator.add(40, 10));
+ 
+    //assertEquals(70, Calculator.add(50, 15));
+ 
+    //assertEquals(80, Calculator.add(60, 10));
+ 
+    //assertEquals(90, Calculator.add(70, 15));
+ 
+    //assertEquals(100, Calculator.add(80, 10));
+ 
+    //assertEquals(110, Calculator.add(90, 15));
+ 
+    //assertEquals(120, Calculator.add(100, 10));
+ 
+    //assertEquals(130, Calculator.add(110, 15));
+ 
+    //assertEquals(140, Calculator.add(120, 10));
+ 
+    //assertEquals(150, Calculator.add(130, 15));
+ 
+    //assertEquals(160, Calculator.add(140, 10));
+ 
+    //assertEquals(170, Calculator.add(150, 15));
+ 
+    //assertEquals(180, Calculator.add(160, 10));
+ 
+    //assertEquals(190, Calculator.add(170, 15));
+ 
+    //assertEquals(200, Calcul

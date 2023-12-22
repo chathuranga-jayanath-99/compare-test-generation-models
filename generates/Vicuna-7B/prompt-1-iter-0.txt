@@ -1,0 +1,69 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Adds two numbers.
+*
+* @param a First operand
+* @param b Second operand
+* @return The sum of a and b
+*/
+public static double add(double a, double b) {
+    return a + b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testAdd() {
+        // Test cases
+        double a = 1.0;
+        double b = 2.0;
+        double expected = 3.0;
+
+        double result = Calculator.add(a, b);
+
+        // Assertions
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testAddWithNegativeNumbers() {
+        // Test cases
+        double a = -1.0;
+        double b = -2.0;
+        double expected = -3.0;
+
+        double result = Calculator.add(a, b);
+
+        // Assertions
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testAddWithPositiveNumbers() {
+        // Test cases
+        double a = 1.0;
+        double b = 2.0;
+        double expected = 3.0;
+
+        double result = Calculator.add(a, b);
+
+        // Assertions
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void testAddWithZero() {
+        // Test cases
+        double a = 0.0;
+        double b = 0.0;
+        double expected = 0.0;
+
+        double result = Calculator.add(a, b);
+
+        // Assertions
+        assertEquals(expected, result);
+    }
+}

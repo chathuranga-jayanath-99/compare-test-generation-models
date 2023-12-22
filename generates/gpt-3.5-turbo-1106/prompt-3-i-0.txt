@@ -1,0 +1,33 @@
+```java
+public class CalculatorTest {
+    @Test
+    public void testMultiplyPositiveNumbers() {
+        double result = Calculator.multiply(5.5, 2.0);
+        assertEquals(11.0, result, 0.0001);
+    }
+  
+    @Test
+    public void testMultiplyNegativeNumbers() {
+        double result = Calculator.multiply(-3.0, -4.5);
+        assertEquals(13.5, result, 0.0001);
+    }
+  
+    @Test
+    public void testMultiplyZeroWithNumber() {
+        double result = Calculator.multiply(0.0, 10.0);
+        assertEquals(0.0, result, 0.0001);
+    }
+  
+    @Test
+    public void testMultiplyWithZero() {
+        double result = Calculator.multiply(7.2, 0.0);
+        assertEquals(0.0, result, 0.0001);
+    }
+  
+    @Test
+    public void testMultiplyWithLargeNumbers() {
+        double result = Calculator.multiply(1000000.0, 1000000.0);
+        assertEquals(1.0E12, result, 0.0001);
+    }
+}
+```

@@ -1,0 +1,22 @@
+```java
+public class CalculatorTest {
+    @Test
+    public void testModulusWithNonZeroDivisor() {
+        double result = Calculator.modulus(10, 3);
+        // Assert that the result is as expected
+        assertEquals(1, result, 0.001);
+    }
+
+    @Test
+    public void testModulusWithZeroDivisor() {
+        try {
+            Calculator.modulus(10, 0);
+            // If no exception is thrown, test fails
+            fail("Expected ArithmeticException was not thrown");
+        } catch (ArithmeticException e) {
+            // If ArithmeticException is thrown, test passes
+            assertEquals("Cannot calculate modulus with zero divisor.", e.getMessage());
+        }
+    }
+}
+```

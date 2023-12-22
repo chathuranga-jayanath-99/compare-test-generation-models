@@ -1,0 +1,106 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Multiplies two numbers.
+*
+* @param a First operand
+* @param b Second operand
+* @return The product of a and b
+*/
+public static double multiply(double a, double b) {
+    return a * b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    multiply() {
+        double result = 
+        double a = 1.0;
+        double b = 2.0;
+        double expected = 2.0;
+        double actual = 
+        Calculator.multiply(a, b);
+        assertEquals(expected, actual);
+    }
+}
+
+@Test
+public void 
+divide() {
+ double result = 
+ double a = 1.0;
+ double b = 2.0;
+ double expected = 0.5;
+ double actual = 
+ Calculator.divide(a, b);
+ assertEquals(expected, actual);
+}
+
+@Test
+public void 
+add() {
+ double result = 
+ double a = 1.0;
+ double b = 2.0;
+ double expected = 3.0;
+ double actual = 
+ Calculator.add(a, b);
+ assertEquals(expected, actual);
+}
+
+@Test
+public void 
+subtract() {
+ double result = 
+ double a = 1.0;
+ double b = 2.0;
+ double expected = -1.0;
+ double actual = 
+ Calculator.subtract(a, b);
+ assertEquals(expected, actual);
+}
+
+@Test
+public void 
+round() {
+ double result = 
+ double a = 1.4286;
+ double expected = 1.43;
+ double actual = 
+ Calculator.round(a);
+ assertEquals(expected, actual);
+}
+
+@Test
+public void 
+ceil() {
+ double result = 
+ double a = 1.4286;
+ double expected = 1.43;
+ double actual = 
+ Calculator.ceil(a);
+ assertEquals(expected, actual);
+}
+
+@Test
+public void 
+floor() {
+ double result = 
+ double a = 1.4286;
+ double expected = 1.429;
+ double actual = 
+ Calculator.floor(a);
+ assertEquals(expected, actual);
+}
+
+@Test
+public void 
+truncate() {
+ double result = 
+ double a = 1.4286;
+ double expected = 1.42

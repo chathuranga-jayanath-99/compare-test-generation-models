@@ -1,0 +1,68 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the cosine of an angle specified in degrees.
+*
+* @param angleInDegrees The angle in degrees.
+* @return The cosine of the given angle.
+*/
+public static double cos(double angleInDegrees) {
+    return Math.cos(Math.toRadians(angleInDegrees));
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    add() {
+        Calculator calc = new Calculator();
+        int num1 = 10;
+        int num2 = 20;
+        int result = calc.add(num1, num2);
+        assertEquals(result, 30);
+    }
+
+    @Test
+    public void 
+    sub() {
+        Calculator calc = new Calculator();
+        int num1 = 10;
+        int num2 = 20;
+        int result = calc.sub(num1, num2);
+        assertEquals(result, 10);
+    }
+
+    @Test
+    public void 
+    mul() {
+        Calculator calc = new Calculator();
+        int num1 = 10;
+        int num2 = 20;
+        int result = calc.mul(num1, num2);
+        assertEquals(result, 200);
+    }
+
+    @Test
+    public void 
+    div() {
+        Calculator calc = new Calculator();
+        int num1 = 10;
+        int num2 = 20;
+        int result = calc.div(num1, num2);
+        assertEquals(result, 0.5);
+    }
+
+    @Test
+    public void 
+    cos() {
+        Calculator calc = new Calculator();
+        double angleInDegrees = Math.PI / 4.0;
+        double result = calc.cos(angleInDegrees);
+        assertEquals(result, 0.7853981633974483);
+    }
+}
+
+Need to add more test cases for the given function description.</s>

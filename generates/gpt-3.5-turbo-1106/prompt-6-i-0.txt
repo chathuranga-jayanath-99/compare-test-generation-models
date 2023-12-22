@@ -1,0 +1,18 @@
+```java
+public class CalculatorTest {
+    @Test
+    public void testPercentageCalculation() {
+        // Test for positive number
+        double result1 = Calculator.percentage(50);
+        assertEquals(0.5, result1);
+        
+        // Test for negative number
+        double result2 = Calculator.percentage(-75);
+        assertEquals(-0.75, result2);
+        
+        // Test for zero
+        double result3 = Calculator.percentage(0);
+        assertEquals(0.0, result3);
+    }
+}
+```

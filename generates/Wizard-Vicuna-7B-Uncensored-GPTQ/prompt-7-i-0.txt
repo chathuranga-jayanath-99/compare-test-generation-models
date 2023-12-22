@@ -1,0 +1,80 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the modulus (remainder) of dividing one number by another.
+*
+* @param a The dividend (the number to be divided).
+* @param b The divisor (the number by which the dividend is divided).
+* @return The remainder when dividing the dividend by the divisor.
+* @throws ArithmeticException If the divisor is zero, as division by zero is undefined.
+*/
+public static double modulus(double a, double b) {
+    if (b == 0) {
+        throw new ArithmeticException("Cannot calculate modulus with zero divisor.");
+    }
+    return a % b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    testAdd() {
+        double result = Calculator.add(2, 3);
+        assertEquals(5, result, 0.000001);
+    }
+
+    @Test
+    public void 
+    testSubtract() {
+        double result = Calculator.subtract(5, 2);
+        assertEquals(-3, result, 0.000001);
+    }
+
+    @Test
+    public void 
+    testMultiply() {
+        double result = Calculator.multiply(2, 3);
+        assertEquals(6, result, 0.000001);
+    }
+
+    @Test
+    public void 
+    testDivide() {
+        double result = Calculator.divide(10, 2);
+        assertEquals(5, result, 0.000001);
+    }
+
+    @Test
+    public void 
+    testModulus() {
+        double result = Calculator.modulus(5, 2);
+        assertEquals(1, result, 0.000001);
+    }
+}
+
+I want to generate test cases for these functions.
+
+
+Expected output:
+
+TestAdd
+Passed
+TestSubtract
+Passed
+TestMultiply
+Passed
+TestDivide
+Passed
+TestModulus
+Passed
+
+
+I want to generate the above output for the given function description.
+
+
+
+</s>

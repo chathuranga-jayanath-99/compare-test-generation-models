@@ -1,0 +1,105 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Divides the first number by the second number.
+*
+* @param a Numerator
+* @param b Denominator
+* @return The result of dividing a by b
+* @throws ArithmeticException If the denominator is zero
+*/
+public static double divide(double a, double b) {
+    if (b == 0) {
+        throw new ArithmeticException("Cannot divide by zero.");
+    }
+    return a / b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    divideShouldReturnResultOfDividingByZero() {
+        // given
+        double zero = 0.0;
+        // when
+        divide(zero, zero);
+        // then
+        // asserts
+        assertEquals(zero, 0.0, 0.00001);
+    }
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    divideShouldReturnResultOfDividingByZero() {
+        // given
+        double one = 1.0;
+        // when
+        divide(one, zero);
+        // then
+        // asserts
+        assertEquals(one, 0.0, 0.00001);
+    }
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    divideShouldReturnResultOfDividingByZero() {
+        // given
+        double two = 2.0;
+        // when
+        divide(two, zero);
+        // then
+        // asserts
+        assertEquals(two, 0.0, 0.00001);
+    }
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    divideShouldReturnResultOfDividingByZero() {
+        // given
+        double three = 3.0;
+        // when
+        divide(three, zero);
+        // then
+        // asserts
+        assertEquals(three, 0.0, 0.00001);
+    }
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    divideShouldReturnResultOfDividingByZero() {
+        // given
+        double four = 4.0;
+        // when
+        divide(four, zero);
+        // then
+        // asserts
+        assertEquals(four, 0.0, 0.00001);
+    }
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    divide

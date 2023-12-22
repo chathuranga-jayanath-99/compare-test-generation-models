@@ -1,0 +1,40 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the exponential function (e^x) for a given number.
+*
+* @param a The exponent for the exponential function.
+* @return The result of raising the mathematical constant 'e' to the power of the input exponent.
+*/
+public static double exp(double a) {
+    return Math.exp(a);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testExp() {
+        // Test cases
+        double expected = 2.718281828459045;
+        double result = Calculator.exp(1.0);
+        assertEquals(expected, result, 0.000001);
+
+        expected = 0.30000000000000000004;
+        result = Calculator.exp(-1.0);
+        assertEquals(expected, result, 0.000001);
+
+        expected = 1.0;
+        result = Calculator.exp(0.0);
+        assertEquals(expected, result, 0.000001);
+
+        expected = 10.0;
+        result = Calculator.exp(1.0);
+        assertEquals(expected, result, 0.000001);
+
+        expected = -1.0;
+        result = Calculator.exp(-1.0);
+        assertEquals(expected, result, 0.000001);
+    }
+}

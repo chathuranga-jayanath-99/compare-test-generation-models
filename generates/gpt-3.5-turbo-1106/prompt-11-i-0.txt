@@ -1,0 +1,21 @@
+```java
+public class CalculatorTest {
+    @Test
+    public void testTanWithZeroAngle() {
+        double result = Calculator.tan(0);
+        assertEquals(0.0, result, 0.0001);
+    }
+    
+    @Test
+    public void testTanWithPositiveAngle() {
+        double result = Calculator.tan(45);
+        assertEquals(1.0, result, 0.0001);
+    }
+    
+    @Test
+    public void testTanWithNegativeAngle() {
+        double result = Calculator.tan(-30);
+        assertEquals(-0.5773, result, 0.0001);
+    }
+}
+```

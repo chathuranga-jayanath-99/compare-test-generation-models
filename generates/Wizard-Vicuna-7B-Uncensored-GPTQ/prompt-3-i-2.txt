@@ -1,0 +1,48 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Multiplies two numbers.
+*
+* @param a First operand
+* @param b Second operand
+* @return The product of a and b
+*/
+public static double multiply(double a, double b) {
+    return a * b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    shouldReturnCorrectResultForAddition() {
+        double result = calculator.add(1, 2);
+        assertEquals(3, result);
+    }
+
+    @Test
+    public void 
+    shouldReturnCorrectResultForSubtraction() {
+        double result = calculator.subtract(10, 5);
+        assertEquals(5, result);
+    }
+
+    @Test
+    public void 
+    shouldReturnCorrectResultForMultiplication() {
+        double result = calculator.multiply(2, 3);
+        assertEquals(6, result);
+    }
+
+    @Test
+    public void 
+    shouldReturnCorrectResultForDivision() {
+        double result = calculator.divide(10, 2);
+        assertEquals(5, result);
+    }
+}
+
+</s>

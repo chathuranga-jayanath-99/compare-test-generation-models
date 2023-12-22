@@ -1,0 +1,73 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the percentage value of a given number.
+*
+* @param a The number for which the percentage is calculated.
+* @return The percentage value of the input number.
+*/
+public static double percentage(double a) {
+    return a / 100;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    testAdd() {
+        int[] args = {1, 2};
+        int expected = args[0] + args[1];
+        int actual = new Calculator().add(args);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void 
+    testSubtract() {
+        int[] args = {1, 2};
+        int expected = args[0] - args[1];
+        int actual = new Calculator().subtract(args);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void 
+    testMultiply() {
+        int[] args = {1, 2};
+        int expected = args[0] * args[1];
+        int actual = new Calculator().multiply(args);
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void 
+    testDivide() {
+        int[] args = {1, 2};
+        int expected = args[0] / args[1];
+        int actual = new Calculator().divide(args);
+        assertEquals(expected, actual);
+    }
+}
+
+public class Calculator {
+ public int add(int... args) {
+ return args[0] + args[1];
+ }
+
+ public int subtract(int... args) {
+ return args[0] - args[1];
+ }
+
+ public int multiply(int... args) {
+ return args[0] * args[1];
+ }
+
+ public int divide(int... args) {
+ return args[0] / args[1];
+ }
+}
+
+</s>

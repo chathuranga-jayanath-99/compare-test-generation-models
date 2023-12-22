@@ -1,0 +1,54 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the square root of a given number.
+*
+* @param a The number for which the square root is calculated.
+* @return The square root of the input number.
+* @throws ArithmeticException If the input number is negative, as the square root of
+*                             a negative number is not defined in the real number system.
+*/
+public static double squareRoot(double a) {
+    if (a < 0) {
+        throw new ArithmeticException("Cannot calculate square root of a negative number.");
+    }
+    return Math.sqrt(a);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testSquareRoot() {
+        double input = -1;
+        double expected = Double.POSITIVE_INFINITY;
+        double result = squareRoot(input);
+        assertEquals(expected, result);
+
+        input = 0;
+        expected = 0;
+        result = squareRoot(input);
+        assertEquals(expected, result);
+
+        input = 1;
+        expected = 1;
+        result = squareRoot(input);
+        assertEquals(expected, result);
+
+        input = 10;
+        expected = 3;
+        result = squareRoot(input);
+        assertEquals(expected, result);
+
+        input = Double.MAX_VALUE;
+        expected = Double.MAX_VALUE;
+        result = squareRoot(input);
+        assertEquals(expected, result);
+
+        input = Double.MIN_VALUE;
+        expected = Double.MIN_VALUE;
+        result = squareRoot(input);
+        assertEquals(expected, result);
+    }
+}

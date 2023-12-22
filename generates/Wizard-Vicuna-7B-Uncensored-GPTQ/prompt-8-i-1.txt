@@ -1,0 +1,30 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the result of raising a base to a specified exponent.
+*
+* @param base     The base number.
+* @param exponent The exponent to which the base is raised.
+* @return The result of raising the base to the exponent.
+*/
+public static double power(double base, double exponent) {
+    return Math.pow(base, exponent);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    test_power_base_exponent_double_double() {
+        double base = 2.0;
+        double exponent = 2.0;
+        double result = power(base, exponent);
+        assertEquals(4.0, result, 0.00000000001);
+    }
+}
+
+
+</s>

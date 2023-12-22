@@ -1,0 +1,42 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the cosine of an angle specified in degrees.
+*
+* @param angleInDegrees The angle in degrees.
+* @return The cosine of the given angle.
+*/
+public static double cos(double angleInDegrees) {
+    return Math.cos(Math.toRadians(angleInDegrees));
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testCos() {
+        // Test cases
+        double angleInDegrees = 0;
+        double expectedCosine = 1.0;
+        double angleInDegrees2 = 90;
+        double expectedCosine2 = 0.0;
+        angleInDegrees = 180;
+        double expectedCosine3 = -1.0;
+        angleInDegrees2 = 270;
+        double expectedCosine4 = -1.0;
+
+        // Test case execution
+        double cosine = cos(angleInDegrees);
+        assertEquals(expectedCosine, cosine, 0.01);
+
+        cosine = cos(angleInDegrees2);
+        assertEquals(expectedCosine2, cosine, 0.01);
+
+        cosine = cos(180);
+        assertEquals(expectedCosine3, cosine, 0.01);
+
+        cosine = cos(270);
+        assertEquals(expectedCosine4, cosine, 0.01);
+    }
+}

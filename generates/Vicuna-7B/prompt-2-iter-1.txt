@@ -1,0 +1,32 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Subtracts the second number from the first number.
+*
+* @param a First operand
+* @param b Second operand
+* @return The result of subtracting b from a
+*/
+public static double subtract(double a, double b) {
+    return a - b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testSubtract() {
+        // Test case 1:
+        double result = subtract(2.0, 1.0);
+        assertEquals(1.0, result);
+
+        // Test case 2:
+        result = subtract(1.0, 2.0);
+        assertEquals(-1.0, result);
+
+        // Test case 3:
+        result = subtract(0.0, 0.0);
+        assertEquals(0.0, result);
+    }
+}

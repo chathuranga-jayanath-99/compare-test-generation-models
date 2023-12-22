@@ -1,0 +1,55 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the tangent of an angle specified in degrees.
+*
+* @param angleInDegrees The angle in degrees.
+* @return The tangent of the given angle.
+*/
+public static double tan(double angleInDegrees) {
+    return Math.tan(Math.toRadians(angleInDegrees));
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    testAdd() {
+        int[] input = {1, 2};
+        int[] expectedOutput = {3, 3};
+        int[] actualOutput = new int[2];
+        int[] actualOutput2 = new int[2];
+        int[] actualOutput3 = new int[2];
+        int[] actualOutput4 = new int[2];
+        int[] actualOutput5 = new int[2];
+
+        actualOutput[0] = calculator.add(input[0], input[1]);
+        actualOutput2[0] = calculator.add(input[0], input[1], 0, 1);
+        actualOutput3[0] = calculator.add(input[0], input[1], 1, 0);
+        actualOutput4[0] = calculator.add(input[0], input[1], 0, 0);
+        actualOutput5[0] = calculator.add(input[0], input[1], 0, 1);
+
+        actualOutput[1] = calculator.add(input[0], input[1], 1, 1);
+        actualOutput2[1] = calculator.add(input[0], input[1], 1, 0);
+        actualOutput3[1] = calculator.add(input[0], input[1], 0, 1);
+        actualOutput4[1] = calculator.add(input[0], input[1], 0, 0);
+        actualOutput5[1] = calculator.add(input[0], input[1], 0, 1);
+
+        assertArrayEquals(expectedOutput, actualOutput);
+        assertArrayEquals(expectedOutput, actualOutput2);
+        assertArrayEquals(expectedOutput, actualOutput3);
+        assertArrayEquals(expectedOutput, actualOutput4);
+        assertArrayEquals(expectedOutput, actualOutput5);
+    }
+
+    @Test
+    public void 
+    testSubtract() {
+        int[] input = {1, 2};
+        int[] expectedOutput = {0, 2};
+        int[] actualOutput = new int[2];
+        int[] actualOutput2 = new int[2];
+        int[] actualOutput3 =

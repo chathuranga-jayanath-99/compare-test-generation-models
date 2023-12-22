@@ -1,0 +1,58 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Divides the first number by the second number.
+*
+* @param a Numerator
+* @param b Denominator
+* @return The result of dividing a by b
+* @throws ArithmeticException If the denominator is zero
+*/
+public static double divide(double a, double b) {
+    if (b == 0) {
+        throw new ArithmeticException("Cannot divide by zero.");
+    }
+    return a / b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testDivide() {
+        // Test cases
+        double a = 10.0;
+        double b = 2.0;
+        double expectedResult = 5.0;
+
+        double result = divide(a, b);
+
+        // Assertions
+        assertEquals(expectedResult, result);
+    }
+
+    @Test
+    public void testDivideByZero() {
+        // Test case
+        double a = 10.0;
+        double b = 0.0;
+
+        try {
+            divide(a, b);
+            fail("Expected ArithmeticException to be thrown");
+        } catch (ArithmeticException e) {
+            // Pass
+        }
+    }
+}
+
+
+This is a Java class that contains a single method, `divide`, which takes two arguments, `a` and `b`, and returns their ratio. The method also throws an `ArithmeticException` if the denominator is zero.
+
+The class also contains two test methods, `testDivide` and `testDivideByZero`, which test the `divide` method. The `testDivide` method tests the behavior of the method when both `a` and `b` are positive and non-zero. The `testDivideByZero` method tests the behavior of the method when the denominator is zero.
+
+The test cases provided in the `testDivide` method are:
+
+* `a = 10.0`, `b = 2.0`: The expected result is `5.0`.
+* `a = 10.

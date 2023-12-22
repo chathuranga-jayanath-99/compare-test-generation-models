@@ -1,0 +1,55 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Divides the first number by the second number.
+*
+* @param a Numerator
+* @param b Denominator
+* @return The result of dividing a by b
+* @throws ArithmeticException If the denominator is zero
+*/
+public static double divide(double a, double b) {
+    if (b == 0) {
+        throw new ArithmeticException("Cannot divide by zero.");
+    }
+    return a / b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testDivide() {
+        // Test cases
+        double a = 10;
+        double b = 2;
+        double expectedResult = 5;
+
+        double result = divide(a, b);
+
+        // Assertions
+        assertEquals(expectedResult, result);
+    }
+
+    @Test
+    public void testDivideByZero() {
+        // Test case
+        double a = 10;
+        double b = 0;
+        double expectedExceptionMessage = "Cannot divide by zero.";
+
+        try {
+            divide(a, b);
+            fail("Expected ArithmeticException but did not throw it.");
+        } catch (ArithmeticException e) {
+            assertEquals(expectedExceptionMessage, e.getMessage());
+        }
+    }
+}
+
+
+The test cases are:
+
+1. Test that the function returns the expected result when both a and b are positive and non-zero.
+2. Test that the function throws an ArithmeticException when the denominator is zero.

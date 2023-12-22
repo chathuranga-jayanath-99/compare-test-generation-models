@@ -1,0 +1,37 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the square root of a given number.
+*
+* @param a The number for which the square root is calculated.
+* @return The square root of the input number.
+* @throws ArithmeticException If the input number is negative, as the square root of
+*                             a negative number is not defined in the real number system.
+*/
+public static double squareRoot(double a) {
+    if (a < 0) {
+        throw new ArithmeticException("Cannot calculate square root of a negative number.");
+    }
+    return Math.sqrt(a);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testSquareRoot() {
+        // Test cases
+        double[] testCases = {0, 1, -1, 10, -10};
+
+        // Generate test cases
+        for (double testCase : testCases) {
+            double expectedResult = Math.sqrt(testCase);
+            double actualResult = squareRoot(testCase);
+            assertEquals(expectedResult, actualResult, 0.01);
+        }
+    }
+}
+
+
+The above code generates test cases for the squareRoot function. The test cases are generated using a for loop and the assertEquals method. The assertEquals method compares the expected result with the actual result and throws an exception if they are not equal within a certain tolerance. The tolerance is set to 0.01 in this example.

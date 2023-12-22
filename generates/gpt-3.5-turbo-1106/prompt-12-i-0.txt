@@ -1,0 +1,14 @@
+```java
+public class CalculatorTest {
+    @Test
+    public void testLogWithPositiveNumber() {
+        double result = Calculator.log(10);
+        assertEquals(1.0, result, 0.0001);
+    }
+
+    @Test
+    public void testLogWithNonPositiveNumber() {
+        assertThrows(ArithmeticException.class, () -> Calculator.log(0));
+    }
+}
+```

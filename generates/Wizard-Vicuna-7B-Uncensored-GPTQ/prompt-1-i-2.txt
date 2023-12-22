@@ -1,0 +1,45 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Adds two numbers.
+*
+* @param a First operand
+* @param b Second operand
+* @return The sum of a and b
+*/
+public static double add(double a, double b) {
+    return a + b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    addTest() {
+        int[] ints = {1, 2, 3, 4, 5};
+        int[] ints2 = {6, 7, 8, 9, 10};
+        double[] doubles = {1.1, 2.2, 3.3, 4.4, 5.5};
+
+        ints.forEach(i -> {
+            doubles.forEach(d -> {
+                ints2.forEach(j -> {
+                 addTest(i, j, d);
+                 });
+            });
+        });
+    }
+
+private void addTest(int i, int j, double d) {
+ if (i == j) {
+ assertEquals(d, add(i, d));
+ } else {
+ assertThrows(ArithmeticException.class, () -> add(i, j));
+ }
+}
+
+}
+
+Note: The test code should be provided in a separate class.</s>

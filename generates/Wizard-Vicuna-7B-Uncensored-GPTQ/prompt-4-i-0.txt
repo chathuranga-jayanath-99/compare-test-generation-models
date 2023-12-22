@@ -1,0 +1,33 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Divides the first number by the second number.
+*
+* @param a Numerator
+* @param b Denominator
+* @return The result of dividing a by b
+* @throws ArithmeticException If the denominator is zero
+*/
+public static double divide(double a, double b) {
+    if (b == 0) {
+        throw new ArithmeticException("Cannot divide by zero.");
+    }
+    return a / b;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    testDivide() {
+        double a = 10;
+        double b = 2;
+        double result = divide(a, b);
+        assertEquals(5, result, 0.000001);
+    }
+}
+
+Note: This is just a sample code. You need to modify it according to the function description you have.</s>

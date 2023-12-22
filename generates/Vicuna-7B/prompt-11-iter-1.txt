@@ -1,0 +1,35 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the tangent of an angle specified in degrees.
+*
+* @param angleInDegrees The angle in degrees.
+* @return The tangent of the given angle.
+*/
+public static double tan(double angleInDegrees) {
+    return Math.tan(Math.toRadians(angleInDegrees));
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testTan() {
+        // Test cases
+        double angleInDegrees = 0;
+        double expectedTangent = 0;
+        double angleInDegrees = 90;
+        double expectedTangent = 1;
+        angleInDegrees = 180;
+        double expectedTangent = -1;
+        angleInDegrees = 30;
+        double expectedTangent = 0.5;
+
+        // Act
+        double actualTangent = Calculator.tan(angleInDegrees);
+
+        // Assert
+        assertEquals(expectedTangent, actualTangent, 0.0001);
+    }
+}

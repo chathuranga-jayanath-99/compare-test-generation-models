@@ -1,0 +1,26 @@
+```java
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThrows;
+import org.junit.Test;
+
+public class CalculatorTest {
+    @Test
+    public void testPositiveNumber() {
+        double result = Calculator.squareRoot(25);
+        assertEquals(5.0, result, 0.0001);
+    }
+
+    @Test
+    public void testZero() {
+        double result = Calculator.squareRoot(0);
+        assertEquals(0.0, result, 0.0001);
+    }
+
+    @Test
+    public void testNegativeNumber() {
+        assertThrows(ArithmeticException.class, () -> {
+            Calculator.squareRoot(-25);
+        });
+    }
+}
+```

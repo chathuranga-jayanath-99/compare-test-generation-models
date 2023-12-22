@@ -1,0 +1,30 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the sine of an angle specified in degrees.
+*
+* @param angleInDegrees The angle in degrees.
+* @return The sine of the given angle.
+*/
+public static double sin(double angleInDegrees) {
+    return Math.sin(Math.toRadians(angleInDegrees));
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    testSin() {
+        // Arrange
+        double angleInDegrees = 30;
+        // Act
+        double result = sin(angleInDegrees);
+        // Assert
+        assertThat(result, is(Math.sin(Math.toRadians(angleInDegrees))));
+    }
+}
+
+Note: This is just an example test case. You can create more test cases based on the function description and its input and output parameters.</s>

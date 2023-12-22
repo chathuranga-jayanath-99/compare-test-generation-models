@@ -1,0 +1,20 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the cosine of an angle specified in degrees.
+*
+* @param angleInDegrees The angle in degrees.
+* @return The cosine of the given angle.
+*/
+public static double cos(double angleInDegrees) {
+    return Math.cos(Math.toRadians(angleInDegrees));
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testCos() {
+        double angleInDegrees = 45.0;
+        double expectedCosine = 0.7071067811865475244008466766065283071795473599264039492656403949639732597500800793360726000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000

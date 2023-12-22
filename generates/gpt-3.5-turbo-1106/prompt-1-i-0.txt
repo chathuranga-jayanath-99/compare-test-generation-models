@@ -1,0 +1,21 @@
+```java
+    public void testAddition() {
+        // Test case 1: Testing for positive numbers
+        assertEquals(5.0, Calculator.add(2.0, 3.0));
+        
+        // Test case 2: Testing for negative numbers
+        assertEquals(-5.0, Calculator.add(-2.0, -3.0));
+        
+        // Test case 3: Testing for zero and positive number
+        assertEquals(3.0, Calculator.add(0.0, 3.0));
+        
+        // Test case 4: Testing for zero and negative number
+        assertEquals(-3.0, Calculator.add(0.0, -3.0));
+        
+        // Test case 5: Testing for two zeros
+        assertEquals(0.0, Calculator.add(0.0, 0.0));
+        
+        // Test case 6: Testing for large numbers
+        assertEquals(10000000000.0, Calculator.add(5000000000.0, 5000000000.0));
+    }
+```

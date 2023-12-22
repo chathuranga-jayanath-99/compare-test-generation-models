@@ -1,0 +1,15 @@
+```java
+    public void testCos_ValidAngle_ReturnsCorrectValue() {
+        // Test for positive angle
+        double result1 = Calculator.cos(60);
+        assertEquals(0.5, result1, 0.0001);
+        
+        // Test for negative angle
+        double result2 = Calculator.cos(-45);
+        assertEquals(0.7071, result2, 0.0001);
+        
+        // Test for zero angle
+        double result3 = Calculator.cos(0);
+        assertEquals(1.0, result3, 0.0001);
+    }
+```

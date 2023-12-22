@@ -1,0 +1,31 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the percentage value of a given number.
+*
+* @param a The number for which the percentage is calculated.
+* @return The percentage value of the input number.
+*/
+public static double percentage(double a) {
+    return a / 100;
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    percentageTest() {
+        // Code to be tested
+        // Call the percentage function
+        double a = 100.0;
+        double result = percentage(a);
+
+        // Verify the result
+        assertEquals(1.0, result, 0.0001);
+    }
+}
+
+Note: The code in the test class should be generated based on the function description.</s>

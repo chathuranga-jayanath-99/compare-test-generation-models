@@ -1,0 +1,44 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the square root of a given number.
+*
+* @param a The number for which the square root is calculated.
+* @return The square root of the input number.
+* @throws ArithmeticException If the input number is negative, as the square root of
+*                             a negative number is not defined in the real number system.
+*/
+public static double squareRoot(double a) {
+    if (a < 0) {
+        throw new ArithmeticException("Cannot calculate square root of a negative number.");
+    }
+    return Math.sqrt(a);
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    testAdd() {
+        int[] ints = {1, 2, 3, 4, 5};
+        int[] ints2 = {6, 7, 8, 9, 10};
+        int[] ints3 = {11, 12, 13, 14, 15};
+        int[] ints4 = {16, 17, 18, 19, 20};
+
+        int result1 = ints[0] + ints[1] + ints[2] + ints[3] + ints[4];
+        int result2 = ints[0] + ints[1] + ints[2] + ints[3] + ints[4] + ints[5];
+
+        int result3 = ints[0] + ints[1] + ints[2] + ints[3] + ints[4] + ints[5] + ints[6];
+
+        int result4 = ints[0] + ints[1] + ints[2] + ints[3] + ints[4] + ints[5] + ints[6] + ints[7];
+
+        int result5 = ints[0] + ints[1] + ints[2] + ints[3] + ints[4] + ints[5] + ints[6] + ints[7] + ints[8];
+
+        int result6 = ints[0] + ints[1] + ints[2] + ints[3] + ints[4] + ints[5] + ints[6] + ints[7] + ints[8] + ints[9];
+
+        int result7 = ints[0] + ints[1] + ints[2] + ints[3] + ints[4] + ints[5] + ints[6] + ints[7] + ints[8] + ints[9] + ints[10];
+
+        int result8 = ints[0] + ints[1] + ints[2] + ints

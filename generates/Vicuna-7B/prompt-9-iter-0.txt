@@ -1,0 +1,20 @@
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the sine of an angle specified in degrees.
+*
+* @param angleInDegrees The angle in degrees.
+* @return The sine of the given angle.
+*/
+public static double sin(double angleInDegrees) {
+    return Math.sin(Math.toRadians(angleInDegrees));
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void testSin() {
+        double angleInDegrees = 45.0;
+        double expectedSine = 0.70710678118654752440084667674709337095326993751954432656208994438500791312963993775488007907159335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594335943359433594

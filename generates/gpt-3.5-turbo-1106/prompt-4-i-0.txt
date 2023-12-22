@@ -1,0 +1,14 @@
+```java
+public class CalculatorTest {
+    @Test
+    public void testDivideByNonZeroDenominator() {
+        double result = YourClassName.divide(10, 5);
+        assertEquals(2.0, result, 0.0001);
+    }
+
+    @Test
+    public void testDivideByZeroDenominator() {
+        assertThrows(ArithmeticException.class, () -> YourClassName.divide(10, 0));
+    }
+}
+```

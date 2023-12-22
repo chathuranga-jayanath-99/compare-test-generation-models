@@ -1,0 +1,81 @@
+<s> 
+Need to generate test cases for a given function description. 
+
+
+/**
+* Calculates the tangent of an angle specified in degrees.
+*
+* @param angleInDegrees The angle in degrees.
+* @return The tangent of the given angle.
+*/
+public static double tan(double angleInDegrees) {
+    return Math.tan(Math.toRadians(angleInDegrees));
+}
+
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 
+    calculateAddition() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.calculateAddition(num1, num2);
+        assertEquals(result, 30);
+    }
+
+
+    @Test
+    public void 
+    calculateSubtraction() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.calculateSubtraction(num1, num2);
+        assertEquals(result, 10);
+    }
+
+
+    @Test
+    public void 
+    calculateMultiplication() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.calculateMultiplication(num1, num2);
+        assertEquals(result, 200);
+    }
+
+
+    @Test
+    public void 
+    calculateDivision() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.calculateDivision(num1, num2);
+        assertEquals(result, 5);
+    }
+
+
+    @Test
+    public void 
+    calculateModulus() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.calculateModulus(num1, num2);
+        assertEquals(result, 1);
+    }
+
+
+    @Test
+    public void 
+    calculateExponentiation() {
+        int num1 = 10;
+        int num2 = 20;
+        int result = Calculator.calculateExponentiation(num1, num2);
+        assertEquals(result, 100);
+    }
+}
+
+
+Note: The code should be provided without any comments.
+
+</s>

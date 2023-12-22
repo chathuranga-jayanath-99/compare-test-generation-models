@@ -1,0 +1,14 @@
+```java
+    public class CalculatorTest {
+        @Test
+        public void testSineFunction() {
+            double angle45Degrees = 45.0;
+            double angle90Degrees = 90.0;
+            double angle180Degrees = 180.0;
+            
+            assertEquals(0.7071, sin(angle45Degrees), 0.001);
+            assertEquals(1.0, sin(angle90Degrees), 0.001);
+            assertEquals(0.0, sin(angle180Degrees), 0.001);
+        }
+    }
+```
