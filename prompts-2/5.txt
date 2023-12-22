@@ -1,0 +1,26 @@
+
+Need to generate test cases for a given function description. 
+
+public class Calculator {
+
+/**
+* Calculates the square root of a given number.
+*
+* @param a The number for which the square root is calculated.
+* @return The square root of the input number.
+* @throws ArithmeticException If the input number is negative, as the square root of
+*                             a negative number is not defined in the real number system.
+*/
+public static double squareRoot(double a) {
+    if (a < 0) {
+        throw new ArithmeticException("Cannot calculate square root of a negative number.");
+    }
+    return Math.sqrt(a);
+}
+
+}
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 

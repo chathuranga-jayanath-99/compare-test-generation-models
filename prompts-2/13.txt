@@ -1,0 +1,21 @@
+
+Need to generate test cases for a given function description. 
+
+public class Calculator {
+
+/**
+* Calculates the exponential function (e^x) for a given number.
+*
+* @param a The exponent for the exponential function.
+* @return The result of raising the mathematical constant 'e' to the power of the input exponent.
+*/
+public static double exp(double a) {
+    return Math.exp(a);
+}
+
+}
+
+Provide only the code.
+public class CalculatorTest {
+    @Test
+    public void 

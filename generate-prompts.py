@@ -1,7 +1,9 @@
 sentence_template = """
 Need to generate test cases for a given function description. 
 
+public class Calculator {{
 {new_function_description}
+}}
 
 Provide only the code.
 public class CalculatorTest {{
@@ -185,7 +187,7 @@ public static double exp(double a) {
 
 i=1
 for description in function_descriptions:
-    file_path = f'./prompts/{i}.txt'
+    file_path = f'./prompts-2/{i}.txt'
     result = generate_sentences(sentence_template, description)
     with open(file_path, 'w') as file:
             file.write(result)
